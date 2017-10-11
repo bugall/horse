@@ -1,0 +1,24 @@
+{
+  "name": "hourse",
+  "version": "1.0.0",
+  "description": "基于node.js实现的分布式协同组件, 类似于Yarn",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bugall/horse.git"
+  },
+  "keywords": [
+    "distributed",
+    "coordination",
+    "node.js"
+  ],
+  "author": "bugall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bugall/horse/issues"
+  },
+  "homepage": "https://github.com/bugall/horse#readme"
+}
