@@ -1,10 +1,11 @@
-const MessageDispatch = require('./lib/message-dispatch');
-const serviceDiscover = require('./lib/serviceDiscover');
+const ServiceDiscover = require('./lib/service-discover');
 
 function Hourse(opts) {
     this.opts = opts;
 }
-Hourse.prototype.create = function() {
+Hourse.prototype.start = function() {
     // connection to message center
-    serviceDiscover(this.opts.mc)
+    new ServiceDiscover(this.opts.mc)
 }
+
+exports = module.exports = Hourse

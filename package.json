@@ -4,7 +4,8 @@
   "description": "基于node.js实现的分布式协同组件, 类似于Yarn",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,9 @@
   },
   "homepage": "https://github.com/bugall/horse#readme",
   "dependencies": {
+    "ioredis": "^3.1.4",
     "lodash": "^4.17.4",
+    "moment": "^2.19.1",
     "uuid": "^3.1.0"
   }
 }
