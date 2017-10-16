@@ -8,4 +8,11 @@ Hourse.prototype.start = function() {
     new ServiceDiscover(this.opts.mc)
 }
 
+const myStore = require('./lib/store')
+
+setInterval(test, 5000)
+
+function test() {
+    console.log(myStore.get().clusterStateInfo)
+}
 exports = module.exports = Hourse
