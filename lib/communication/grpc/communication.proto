@@ -1,11 +1,11 @@
 syntax = "proto3";
 package communication;
 
-message WorkUnitInfo {
+message workUnitInfo {
     int64 createTime = 1;
     string content = 2;
 }
 
 service Work {
-    rpc WorkUnit(WorkUnitInfo) return (WorkUnitInfo);
+    rpc sendWorkUnit(workUnitInfo) return (workUnitInfo);
 }
